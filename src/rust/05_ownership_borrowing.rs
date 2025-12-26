@@ -16,5 +16,5 @@ Examples:
 */
 
 pub fn solution<'a>(s: &'a str) -> &'a str {
-	unimplemented!()
+  unimplemented!()
 }

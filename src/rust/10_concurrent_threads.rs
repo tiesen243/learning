@@ -15,5 +15,5 @@ Examples:
 */
 
 pub fn solution(nums: &[i64]) -> i64 {
-	unimplemented!()
+  unimplemented!()
 }

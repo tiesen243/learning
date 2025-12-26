@@ -18,48 +18,52 @@ Examples:
 */
 
 pub trait Animal {
-    fn name(&self) -> &str;
-    fn speak(&self) -> String;
+  fn name(&self) -> &str;
+  fn speak(&self) -> String;
 }
 
 pub struct Dog {
-    pub name: String,
+  pub name: String,
 }
 
 impl Dog {
-    pub fn new(name: &str) -> Self {
-        unimplemented!()
+  pub fn new(name: &str) -> Self {
+    Dog {
+      name: String::from(name),
     }
+  }
 }
 
 impl Animal for Dog {
-    fn name(&self) -> &str {
-        unimplemented!()
-    }
-    fn speak(&self) -> String {
-        unimplemented!()
-    }
+  fn name(&self) -> &str {
+    &self.name
+  }
+  fn speak(&self) -> String {
+    String::from("woof")
+  }
 }
 
 pub struct Cat {
-    pub name: String,
+  pub name: String,
 }
 
 impl Cat {
-    pub fn new(name: &str) -> Self {
-        unimplemented!()
+  pub fn new(name: &str) -> Self {
+    Cat {
+      name: String::from(name),
     }
+  }
 }
 
 impl Animal for Cat {
-    fn name(&self) -> &str {
-        unimplemented!()
-    }
-    fn speak(&self) -> String {
-        unimplemented!()
-    }
+  fn name(&self) -> &str {
+    &self.name
+  }
+  fn speak(&self) -> String {
+    String::from("meow")
+  }
 }
 
 pub fn solution() -> Vec<Box<dyn Animal>> {
-    unimplemented!()
+  vec![Box::new(Dog::new("Rex")), Box::new(Cat::new("Mittens"))]
 }

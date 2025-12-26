@@ -16,5 +16,5 @@ Examples:
 */
 
 pub fn solution(s: &str) -> Result<Vec<i32>, String> {
-	unimplemented!()
+  unimplemented!()
 }

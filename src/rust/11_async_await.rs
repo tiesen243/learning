@@ -15,5 +15,5 @@ Examples (conceptual):
 */
 
 pub async fn solution(id: u64) -> String {
-	unimplemented!()
+  unimplemented!()
 }

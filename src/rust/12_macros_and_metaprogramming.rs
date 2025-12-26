@@ -15,8 +15,9 @@ Examples:
 
 #[macro_export]
 macro_rules! solution {
-	($name:ident, $val:expr) => {
-		fn $name() -> i32 { unimplemented!() }
-	};
+  ($name:ident, $val:expr) => {
+    fn $name() -> i32 {
+      unimplemented!()
+    }
+  };
 }
-

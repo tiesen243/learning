@@ -15,5 +15,5 @@ Examples:
 */
 
 pub fn solution<T: Ord + Copy>(slice: &[T]) -> Option<T> {
-	unimplemented!()
+  unimplemented!()
 }
