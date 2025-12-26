@@ -14,8 +14,15 @@ Examples:
 - `solution(&[2,7,11,15], 9) -> Some((0,1))`
 */
 
-use std::collections::HashMap;
-
 pub fn solution(nums: &[i32], target: i32) -> Option<(usize, usize)> {
-  unimplemented!()
+  for (i, &num) in nums.iter().enumerate() {
+    let complement = target - num;
+    if let Some(j) = nums
+      .iter()
+      .position(|&x| x == complement && nums.iter().position(|&y| y == x).unwrap() != i)
+    {
+      return Some((i, j));
+    }
+  }
+  None
 }
