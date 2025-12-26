@@ -1,0 +1,8 @@
+{
+  "name": "learning",
+  "version": "0.0.1",
+  "description": "A repository for learning and experimentation",
+  "devDependencies": {
+    "oxfmt": "^0.20.0"
+  }
+}

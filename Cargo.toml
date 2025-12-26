@@ -1,0 +1,7 @@
+[package]
+name = "learning"
+description = "A repository for learning and experimentation"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
