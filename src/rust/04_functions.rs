@@ -15,5 +15,10 @@ Examples:
 */
 
 pub fn solution(mut a: u64, mut b: u64) -> u64 {
-	unimplemented!()
+  while b != 0 {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  a
 }
