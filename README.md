@@ -30,16 +30,6 @@ for t in src/rust/*.test.rs; do
 done
 ```
 
-Make tests `cargo test`-friendly
-
-- Option A (recommended): move test files into a top-level `tests/` directory and update `include!` paths to reference `../src/rust/NN.name.rs`; then run `cargo test`.
-- Option B: expose exercises as modules in `src/lib.rs` so unit tests run under `cargo test`.
-
-Notes
-
-- Many exercises are intentionally left with `unimplemented!()` to give you practice implementing them.
-- The async exercise test is marked `#[ignore]` because it needs an async executor (e.g., `tokio`). Use `cargo test -- --ignored` after wiring for cargo.
-
 ### Python: setup & run
 
 Create and activate a virtual environment, then run examples or tests:
@@ -50,6 +40,15 @@ source .venv/bin/activate
 python src/python/some_exercise.py
 ```
 
+Quick-run many Python test files:
+
+```bash
+for t in src/python/*.test.py; do
+    echo "Running $t";
+    python "$t";
+done
+```
+
 ### TypeScript: setup & run
 
 Install Node dependencies and run TypeScript files (or compile first):
@@ -57,6 +56,15 @@ Install Node dependencies and run TypeScript files (or compile first):
 ```bash
 bun install
 bun src/typescript/some_exercise.ts
+```
+
+Quick-run many TypeScript test files:
+
+```bash
+for t in src/typescript/*.test.ts; do
+    echo "Running $t";
+    bun "$t";
+done
 ```
 
 ## License
