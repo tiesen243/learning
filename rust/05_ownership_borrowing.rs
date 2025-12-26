@@ -16,5 +16,5 @@ Examples:
 */
 
 pub fn solution<'a>(s: &'a str) -> &'a str {
-  unimplemented!()
+  str::from_utf8(&s.as_bytes()[..s.bytes().position(|b| b == b' ').unwrap_or(s.len())]).unwrap()
 }
