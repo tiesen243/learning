@@ -10,3 +10,10 @@ build/
 dist/
 wheels/
 *.egg-info
+
+# misc
+.DS_Store
+.vscode/
+.idea/
+*.log
+tmp_test
