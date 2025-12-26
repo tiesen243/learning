@@ -14,5 +14,5 @@ Examples:
 */
 
 pub fn solution(a: i32, b: f64) -> f64 {
-	unimplemented!()
+  (a as f64) + b
 }

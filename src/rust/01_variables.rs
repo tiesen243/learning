@@ -15,5 +15,5 @@ Examples:
 */
 
 pub fn solution(a: i32, b: i32) -> (i32, i32) {
-    (b, a)
+  (b, a)
 }
