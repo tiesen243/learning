@@ -3,10 +3,10 @@ Assignment 03: FizzBuzz Single Value
 
 Instruction:
 - Implement `solution(n)` returning:
-	- "FizzBuzz" if divisible by 15
-	- "Fizz" if divisible by 3
-	- "Buzz" if divisible by 5
-	- otherwise the number as a string
+  - "FizzBuzz" if divisible by 15
+  - "Fizz" if divisible by 3
+  - "Buzz" if divisible by 5
+  - otherwise the number as a string
 
 Requirements & guidance:
 - Signature: `pub fn solution(n: i32) -> String`.
@@ -19,5 +19,13 @@ Examples:
 */
 
 pub fn solution(n: i32) -> String {
-		unimplemented!()
+  if n % 15 == 0 {
+    String::from("FizzBuzz")
+  } else if n % 3 == 0 {
+    String::from("Fizz")
+  } else if n % 5 == 0 {
+    String::from("Buzz")
+  } else {
+    n.to_string()
+  }
 }
